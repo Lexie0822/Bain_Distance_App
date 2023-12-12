@@ -31,29 +31,6 @@ The goal of this document is to present a technical design to create a Delivery 
 - Machine Learning Engineer - #Name 
 - Project Leader - Tanner Barney 
 
-# Use Cases
-
-MVP use cases
-
-1. As a customer I want to place orders.
-2. As a customer I want to be able to cancel Orders.
-3. As a customer I want to select the delivery address
-4. As a delivery agent I want to see my active/assigned orders.
-5. As a delivery agent I want to be able to finish orders.
-6. As a delivery agent I want to be able to cancel orders.
-7. As a delivery agent I want to have a personal profile.
-
-# Out Of Scope on short term solution
-- We won't manage customers profiles.
-- We won't manage payment services.
-- We won't be automatically integrated with finance systems, if they exist.
-
-# Assumptions
-- We have access to the following APIs:
-  - Georeference information.
-  - Customer product catalog availability.
-  - We will start the experiment with 1 client locale.
-
 
 # Proposal
 
