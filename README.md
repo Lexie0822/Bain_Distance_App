@@ -29,8 +29,7 @@ The goal of this document is to present a technical design to create a Delivery 
 - UX/UI Designer - #Name
 - Data Scientist - #Name
 - Machine Learning Engineer - #Name 
-- Project Leader - Diego Garate
-
+- Project Leader - Tanner Barney 
 # Use Cases
 
 MVP use cases
