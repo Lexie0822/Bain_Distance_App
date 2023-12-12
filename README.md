@@ -86,9 +86,7 @@ For the prototype, using the MERN stack, the essential software components are:
 - MongoDB offers flexible data storage, quick retrieval, and scalability.
 
 ### Diagram
-![Diagram](https://drive.google.com/uc?id=1L965-rYUnU1_o9ZEMNHFSL4toRang2wrhttps://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=drive_link)
-
-
+![](https://dochub.com/leon-quan0822/DL7JlEGV13MGdDBRrWe0oa/system-diagram-png)
 
 
 
