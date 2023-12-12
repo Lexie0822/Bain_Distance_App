@@ -87,9 +87,8 @@ For the prototype, using the MERN stack, the essential software components are:
 
 ### Diagram
 
-![]([https://dochub.com/leon-quan0822/DL7JlEGV13MGdDBRrWe0oa/system-diagram-png](https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=sharing)
 
-![System Diagram](https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=sharing))
+![System Diagram](https://github.com/Lexie0822/Bain_Distance_App/blob/main/System%20Diagram.png)
 
 
 
