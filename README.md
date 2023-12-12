@@ -88,7 +88,7 @@ For the prototype, using the MERN stack, the essential software components are:
 ### Diagram
 
 ![](https://dochub.com/leon-quan0822/DL7JlEGV13MGdDBRrWe0oa/system-diagram-png)
-
+https://dochub.com/leon-quan0822/DL7JlEGV13MGdDBRrWe0oa/system-diagram-png
 
 
 ## 2. Architecture Choice: Microservices with MERN Stack
