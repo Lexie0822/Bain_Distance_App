@@ -29,7 +29,7 @@ The goal of this document is to present a technical design to create a Delivery 
 - UX/UI Designer - #Name
 - Data Scientist - #Name
 - Machine Learning Engineer - #Name 
-- Project Leader - Li Quan
+- Project Leader - Tanner Barney 
 
 
 # Proposal
@@ -130,7 +130,6 @@ Additional Team Members:
 - **CI/CD Integration**: Automated testing and deployment, using tools like Jenkins or GitHub Actions.
 
 ## 5. Team Composition and Expansion
-I am the Manager, Full stack Developer
 
 ### During Prototype
 - **Current Team Sufficiency**: The multi-disciplinary nature of the existing team covers the prototype phase.
