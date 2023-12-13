@@ -30,37 +30,41 @@ The goal of this document is to present a technical design to create a Delivery 
 - Data Scientist - #Name
 - Machine Learning Engineer - #Name 
 - Project Leader - Tanner Barney 
-# Use Cases
-
-MVP use cases
-
-1. As a customer I want to place orders.
-2. As a customer I want to be able to cancel Orders.
-3. As a customer I want to select the delivery address
-4. As a delivery agent I want to see my active/assigned orders.
-5. As a delivery agent I want to be able to finish orders.
-6. As a delivery agent I want to be able to cancel orders.
-7. As a delivery agent I want to have a personal profile.
-
-# Out Of Scope on short term solution
-- We won't manage customers profiles.
-- We won't manage payment services.
-- We won't be automatically integrated with finance systems, if they exist.
-
-# Assumptions
-- We have access to the following APIs:
-  - Georeference information.
-  - Customer product catalog availability.
-  - We will start the experiment with 1 client locale.
 
 
 # Proposal
 
-For the Bain Full Stack Developer assessment, focusing on a MERN (MongoDB, Express.js, React, Node.js) stack for the Address Mapping Delivery Application, let's create a detailed response that aligns with the specific technologies:
+I leverage MERN (MongoDB, Express.js, React, Node.js) stack for the Address Mapping Delivery Application, let's create a detailed response that aligns with the specific technologies:
 
----
 
 # Address-Mapping-Delivery-Application-Bain Challenge Response
+
+Welcome to the Bain Address-Mapping-Delivery Application, a cutting-edge solution designed to revolutionize the delivery industry. Developed using the MERN stack, this application aims to streamline the order placement process for customers and optimize the management of these orders for delivery agents.
+
+## Table of Contents
+1. [Key Features](#key-features)
+2. [Technology Stack](#technology-stack)
+3. [System Architecture](#system-architecture)
+4. [Getting Started](#getting-started)
+5. [API Documentation](#api-documentation)
+6. [Development Process](#development-process)
+7. [Team Structure](#team-structure)
+8. [Contribution Guidelines](#contribution-guidelines)
+9. [License](#license)
+
+## Key Features
+- **Customer Interface**: Easy order placement and tracking.
+- **Delivery Agent Interface**: Efficient management of orders and profiles.
+- **Real-time Notifications**: Instant updates for customers and agents.
+- **Secure Authentication**: Robust security for user data.
+
+## Technology Stack
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JWT
+- **Real-Time Communication**: WebSockets
+
 
 ## 1. Software Components for the Prototype
 
@@ -86,12 +90,15 @@ For the prototype, using the MERN stack, the essential software components are:
 - MongoDB offers flexible data storage, quick retrieval, and scalability.
 
 ### Diagram
-![Diagram](attachment://file-e6AjzYYD6hAuRSi0Jr5d6y03.png)
 
-https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=drive_link
+
+![System Diagram](https://github.com/Lexie0822/Bain_Distance_App/blob/main/System%20Diagram.png)
+
+
 
 
 ## 2. Architecture Choice: Microservices with MERN Stack
+The application employs a microservices architecture, ensuring scalability, flexibility, and ease of maintenance.
 
 ### Rationale
 - **Scalability & Flexibility**: Microservices architecture, combined with the MERN stack, facilitates scaling specific parts of the application as needed.
@@ -99,6 +106,16 @@ https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=drive
 - **Community & Ecosystem**: Strong community support and rich ecosystem for each MERN component.
 
 ## 3. Development Methodology: Agile with Scrum
+
+Microservices: Ideal for scalability and independent development of different components. Use Docker for containerization.
+Development Methodology:
+
+Agile Scrum: It allows for iterative development and is adaptive to changes, which is crucial for a prototype phase.
+Git Workflow:
+
+Feature Branch Workflow: Developers create new branches for each feature, ensuring the master branch always has a stable version.
+Additional Team Members:
+
 
 ### Justification
 - **Iterative Development**: Allows for regular evaluation and incorporation of feedback.
@@ -120,7 +137,7 @@ https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=drive
 ### Post-Prototype
 - **Potential Additions**: 
   - **DevOps Specialist**: For optimizing deployment and managing cloud infrastructure.
-  - **Quality Assurance Engineer**: To enhance testing strategies and processes.
+  - **Quality Assurance Engineer**: To enhance testing strategies and processes. 
 
 ## 6. Additional Robust and Efficient Development Considerations
 
