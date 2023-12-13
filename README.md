@@ -56,60 +56,82 @@ MVP use cases
 
 # Proposal
 
-We will have a mix of a basic 3 tier architecture system divided by usage (Customer vs Delivery Agent) and a microservices architecture divided by domain, to enhance scalability, fast product development, mitigate down-time risks, and remain loosely coupled. We can observer a long term solution on the design, and with red filled squares the MVP we will experiment with.
+For the Bain Full Stack Developer assessment, focusing on a MERN (MongoDB, Express.js, React, Node.js) stack for the Address Mapping Delivery Application, let's create a detailed response that aligns with the specific technologies:
 
-![](https://drive.google.com/uc?id=1L965-rYUnU1_o9ZEMNHFSL4toRang2wr)
+---
+
+# Address-Mapping-Delivery-Application-Bain Challenge Response
+
+## 1. Software Components for the Prototype
+
+### Essential Components in MERN Stack
+For the prototype, using the MERN stack, the essential software components are:
+
+1. **Client-Side Tier** (React): 
+   - **Customer UI Application**: Enables customers to place and track orders.
+   - **Delivery Agent UI Application**: Allows agents to manage and update order statuses.
+
+2. **Server-Side Tier** (Node.js, Express.js): 
+   - **Authentication Service** (Express.js, JWT): Manages secure user authentication.
+   - **Order Management Service** (Express.js): Processes and manages orders.
+   - **Agent Management Service** (Express.js): Handles agent profiles and assignments.
+   - **Notification Service** (Express.js, WebSockets): Real-time updates for customers and agents.
+
+3. **Data Management Tier** (MongoDB): 
+   - **NoSQL Database**: Stores user data, order details, and other transactional information.
+
+### Interrelations
+- React-based UI applications interact with Express.js services via HTTP/RESTful APIs.
+- Node.js backend ensures efficient handling of concurrent requests.
+- MongoDB offers flexible data storage, quick retrieval, and scalability.
+
+### Diagram
+![Diagram](attachment://file-e6AjzYYD6hAuRSi0Jr5d6y03.png)
+
+https://drive.google.com/file/d/1YSNbTuI-sxaOS_YZccIckw4NC1Nhc4Sd/view?usp=drive_link
 
 
-## MVP Software pieces:
+## 2. Architecture Choice: Microservices with MERN Stack
 
-1) Client-side tier: 2 pieces of software (Customer, Delivery Agent UI Applications)
-2) Server-side tier: 8 pieces of software (2 Authe/Autho service, Catalog Service, Order service, Agent CRUD Service, Message Broker, Agent Notification service, Customer Notification Service, Delivery Engine)
-3) Data Management tier: 1 piece of software (Relational DB).
+### Rationale
+- **Scalability & Flexibility**: Microservices architecture, combined with the MERN stack, facilitates scaling specific parts of the application as needed.
+- **Modular Development & Maintenance**: Eases the development and updating of individual services without impacting the entire system.
+- **Community & Ecosystem**: Strong community support and rich ecosystem for each MERN component.
 
-## Long term solution software pieces:
+## 3. Development Methodology: Agile with Scrum
 
-To enhance customer experience we will add the following services:
-- Customers CRUD service.- To manage customer profiles
-- Payment Service.- To provide debit/credit card payments online
-- Tracking Service.- To keep customer updated of his order.
+### Justification
+- **Iterative Development**: Allows for regular evaluation and incorporation of feedback.
+- **Flexibility & Adaptability**: Agile's flexibility is ideal for a fast-paced, evolving project like a delivery application.
+- **Sprint Structure**: Incorporates bi-weekly sprints, regular stand-ups, and sprint reviews for continuous improvement.
 
-To be able to scale (Several business locations) we will implement/expand:
+## 4. Git Workflow
 
-- Locale Service .- Service that will have the products that a given business locale offers, and the region they support.
-- Expand Data Management tier. (Relational or No relational DB as needed)
+### Strategy
+- **Feature Branch Workflow**: Development occurs in feature branches, merged into a development branch, and then to the main branch.
+- **Code Reviews & Pull Requests**: Ensures code quality and collaborative improvement.
+- **CI/CD Integration**: Automated testing and deployment, using tools like Jenkins or GitHub Actions.
 
-# Implementation 
-## Methodology
-We will use a mix of Scrum to take advantage of the flexibility of agile development. In my experience what works better is the following configurations: 2 weeks sprint, 1 Retro per month, 1 Demo per sprint, Planning 1 day before starting the sprint and Grooming 3 days before starting the sprints. Daily's at mid day. 
-We will combine this agile methodology with Kanban dashboard to keep track of the progress.
+## 5. Team Composition and Expansion
 
-With this combination we can keep track on how the implementation is going, remove major blocks, call out risk we encounter, and keep flexibility to changes.
+### During Prototype
+- **Current Team Sufficiency**: The multi-disciplinary nature of the existing team covers the prototype phase.
 
-## Workflow
+### Post-Prototype
+- **Potential Additions**: 
+  - **DevOps Specialist**: For optimizing deployment and managing cloud infrastructure.
+  - **Quality Assurance Engineer**: To enhance testing strategies and processes.
 
-We will create a pipeline that contains at least 3 stages: 1) Development, 2) Gamma, 3) Production.
+## 6. Additional Robust and Efficient Development Considerations
 
-To be able to collaboratively push code to production we will use a git repository with a mainline, that triggers automatics deployments (CD/CI) until gamma. Production changes should be manually approved, with some safety measure as checking repository version is clean, Unit/Functional/Integration tests are passing, it is not end of a day, or weekend, etc.
+### Risk Management
+- Ongoing risk assessments and mitigation plans.
 
-Base on my experience no code should be merge without a peer review. except on emergency events. We should avoid branching on server repository (local branches are okay)
+### Performance Metrics
+- Focusing on response times, error rates, and user engagement metrics.
 
-We can make our pipeline full CD/CI (all the way to prod) once we have more resources to handle issues 24/7.
+### User Feedback and Testing
+- Channels for user feedback and comprehensive testing, including unit, integration, and user acceptance tests.
 
-## Workload - Resource
-
-It will depend on the time to market we aim and discuss with the client. I can see some developemt domains we can parallelize if we need to go faster. 
-
-I would at maximum allocate 3 Software Developers, with 1 of them being the project leader I could take that role to keep the team aligned, review the code, and collaborate implementing the critical path:
-1) Customer Domain (Front/Back) 
-2) Delivery Agent Domain (Front/Back) 
-3) Infrastructure and Data Domain.
-
-Base on my experience 1 UX (Dev Designer), 1 Impact Lead, 1 DS and 1 MLE are enough for consultations during the prototype phase.
-
-## Other considerations
-I would advice to take into consideration the Impact Lead, DS, MLE knowledge and information requirements to make the experiment more efficient. For example, what business metrics do we need to gather? what information should we store? Which are the criterias to consider this a succesful experiment.
-
-Also, on the operational level we need to decide what failure conditions we will handle, monitor and alarm on. What is the testing plan (Unit testing, functional test, manual testing), Error logging plan, Asses security concerns using procedures and policy of our client, and mitigate/communicate any risk we encounter.
-
-Other additional consideration I would suggest are internationalization (Are we going to have global presence?), Accesibility features (Sequential structure, Screen readers support, use of alternative text. Do we test accesibility features?)
+### Documentation and Security
+- Emphasis on thorough documentation and adherence to security best practices, particularly for data protection and authentication.

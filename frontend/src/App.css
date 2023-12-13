@@ -1,0 +1,33 @@
+.app-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.app-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.distance-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.distance-form input, .distance-form button {
+  margin-top: 10px;
+}
+
+.history-section {
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .distance-form input, .distance-form button {
+    width: 100%;
+  }
+}
